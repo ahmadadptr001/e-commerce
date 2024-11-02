@@ -45,16 +45,16 @@ function App() {
         <Route
           path="/"
           element={
-            <div>
-              <h1> Test! </h1>
+            <>
+              
               <Navbar />
               <Hero />
               <A_year />
               <NotepadPage />
               <Motivation />
               <Follow />
-              <Footer />
-            </div>
+              
+            </>
           } />
 
         <Route path="/shop" element={<MainShop />} />
@@ -78,9 +78,9 @@ function App() {
           <Route path="/shop-more/men's" element={<Mens />} />
           <Route path="/shop-more/women's" element={<Womens />} />
           <Route path="/shop-more/searching" element={<Searching />} />
-
+            
       </Routes>
-
+      <Footer />
     </Router>
   );
 }
