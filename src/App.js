@@ -46,6 +46,7 @@ function App() {
           path="/"
           element={
             <div>
+              <h1> Test! </h1>
               <Navbar />
               <Hero />
               <A_year />
