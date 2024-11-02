@@ -52,6 +52,7 @@ function App() {
               <NotepadPage />
               <Motivation />
               <Follow />
+              <Footer />
             </>
           } />
 
@@ -78,8 +79,6 @@ function App() {
           <Route path="/shop-more/searching" element={<Searching />} />
 
       </Routes>
-
-      <Footer />
 
     </Router>
   );
