@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-nav i.bx {
+  font-size: 1.3rem;
+}
+
+.navbar button {
+  box-shadow: none;
+  border: none;
+}
+
+.navbar button:focus {
+  box-shadow: none;
+}
+
+a {
+  color: rgb(43, 43, 43);
+  font-size: 1.2rem;
+}
+
+.dropdown li a{
+  font-size: .8rem;
+}
+
+.text-decoration-underline, .ahmad-text {
+  text-underline-offset: 8px;
+}
+
+.ahmad-text {
+  text-decoration-thickness: 4px !important;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: tomato !important;
+}
+
+ul li input {
+  font-size: .8rem;
+}
+
+ul li input::placeholder {
+  color: rgb(146, 146, 146) !important;
+  font-weight: 100;
+}
+
+ul li input:focus {
+  border: none;
+  outline: none;
+}
+
+ul li input[type="search"]::-webkit-search-cancel-button {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+#content-image {
+  width: 40%;
+}
+
+#hero-image {
+  width: 30%;
+}
+
+@media (min-width: 360px) {
+  #hero-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 560px) {
+  #hero-image {
+    width: 30%;
+  }
+}
+
+.navbar * {
+  transition: .3s ease-in-out;
+}
+
+.text-semi-warning {
+  color: rgb(209, 136, 0) !important;
+  font-family: "Playwrite GB S";
+}
+
+.text-title {
+  width: 100%;
+  font-family: "Playwrite GB S";
+}
+
+.container-fluid.d-sm-flex * {
+  height: auto !important;
+}
+
+#follow-up-link {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+#follow-up-link li {
+  list-style: none;
+}
+
+#follow-up-link li a {
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.container-contact {
+  font-size: 90%;
+}
+
+.container-contact p, label {
+  font-family: "Edu VIC WA NT Beginner";
+}
