@@ -79,6 +79,7 @@ function App() {
           <Route path="/shop-more/women's" element={<Womens />} />
           <Route path="/shop-more/searching" element={<Searching />} />
 
+          <Footer />
       </Routes>
 
     </Router>
