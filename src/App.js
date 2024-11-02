@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <Router basename="/e-commerce">
+    <Router basename="/e-commerce/">
       <Routes>
 
         <Route
