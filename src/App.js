@@ -45,7 +45,7 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <div>
               <Navbar />
               <Hero />
               <A_year />
@@ -53,7 +53,7 @@ function App() {
               <Motivation />
               <Follow />
               <Footer />
-            </>
+            </div>
           } />
 
         <Route path="/shop" element={<MainShop />} />
