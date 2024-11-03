@@ -51,7 +51,7 @@ export default function A_year() {
             <div className="container p-3 mb-4 mt-2">
                 <div className="row d-flex justify-content-center">
                     <h1 className="text-center text-success fw-normal p-5 w-75" style={{ fontFamily: 'Advent Pro', letterSpacing : '2px' }} ref={revealRef1}>
-                        To search deeper and get updates and more products, please check my <span><a href="/e-comme/shop-more" className="text-dark display-6">Shop</a></span> ♡
+                        To search deeper and get updates and more products, please check my <span><a href="/e-commerce/#/shop-more" className="text-dark display-6">Shop</a></span> ♡
                     </h1>
                 </div>
             </div>

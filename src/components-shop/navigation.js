@@ -30,19 +30,19 @@ export default function Navigation( { onSearchChange }) {
                             </button>
                             <ul className="dropdown-menu text-center">
                                 <li>
-                                    <a className="dropdown-item" href="/e-commerce/shop-more">All Category</a>
+                                    <a className="dropdown-item" href="/e-commerce/#/shop-more">All Category</a>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/e-commerce/shop-more/electronics">Electronics</a>
+                                    <a className="dropdown-item" href="/e-commerce/#/shop-more/electronics">Electronics</a>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/e-commerce/shop-more/jewelery">Jewelery</a>
+                                    <a className="dropdown-item" href="/e-commerce/#/shop-more/jewelery">Jewelery</a>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/e-commerce/shop-more/men's">Men's Clothing</a>
+                                    <a className="dropdown-item" href="/e-commerce/#/shop-more/men's">Men's Clothing</a>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="/e-commerce/shop-more/women's">Women's Clothing</a>
+                                    <a className="dropdown-item" href="/e-commerce/#/shop-more/women's">Women's Clothing</a>
                                 </li>
                             </ul>
                         </li>
@@ -55,7 +55,7 @@ export default function Navigation( { onSearchChange }) {
                     <div>
                         <ul className="gap-2 d-flex align-items-center justify-content-center mt-4 mt-lg-0 p-0">
                             <li className="nav-item">
-                                <form action="/e-commerce/shop-more/searching" className="d-flex align-items-center justify-content-center gap-2">
+                                <form action="/e-commerce/#/shop-more/searching" className="d-flex align-items-center justify-content-center gap-2">
                                     <input
                                         type="search"
                                         value={searchInput}

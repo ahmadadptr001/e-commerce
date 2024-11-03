@@ -11,22 +11,22 @@ export default function Navbar(props) {
                 <div className="navbar-collapse collapse">
                     <ul className="navbar-nav d-flex me-auto align-items-center">
                         <li className="nav-item">
-                            <a href="/e-commerce/a_year_in_indonesia" className={`nav-link ${props.a_year}`}>
+                            <a href="/e-commerce#/a_year_in_indonesia" className={`nav-link ${props.a_year}`}>
                                 A year in Indonesia
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/e-commerce/shop" className={`nav-link ${props.shopMain}`}>
+                            <a href="/e-commerce/#/shop" className={`nav-link ${props.shopMain}`}>
                                 Shop
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/e-commerce/about" className={`nav-link ${props.about}`}>
+                            <a href="/e-commerce/#/about" className={`nav-link ${props.about}`}>
                                 About
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/e-commerce/contact" className={`nav-link ${props.contact}`}>
+                            <a href="/e-commerce/#/contact" className={`nav-link ${props.contact}`}>
                                 Contact
                             </a>
                         </li>
@@ -35,8 +35,8 @@ export default function Navbar(props) {
                             data-bs-toggle="dropdown"
                             data-bs-target="menu-dropdown"> more... </button>
                             <ul className="dropdown-menu text-center m-auto mt-2 mt-lg-0">
-                            <li><a class="dropdown-item" href="/e-commerce/shop-more">Shop More</a></li>
-                            <li><a class="dropdown-item" href="/e-commerce/anime">Search Anime</a></li>
+                            <li><a class="dropdown-item" href="/e-commerce/#/shop-more">Shop More</a></li>
+                            <li><a class="dropdown-item" href="/e-commerce/#/anime">Search Anime</a></li>
                             </ul>
                         </li>
                     </ul>
