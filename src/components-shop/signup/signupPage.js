@@ -44,7 +44,7 @@ export default function Signup() {
                             </form>
 
                             <div className="text-center already-account p-3">
-                                Already have an account? <a href="/e-commerce/#/shop-more/sigin" className="text-primary">Log in to your account.</a>
+                                Already have an account? <a href="/e-commerce/#/shop-more/signin" className="text-primary">Log in to your account.</a>
                             </div>
                         </div>
                     </div>
