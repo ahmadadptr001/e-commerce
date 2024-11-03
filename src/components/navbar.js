@@ -3,7 +3,7 @@ export default function Navbar(props) {
     return (
         <nav className={`navbar navbar-expand-lg p-3 shadow-sm`}>
             <div className="container">
-                <a href="/" className="navbar-brand align-items-center d-flex text-danger fs-4 fw-normal">Ahmad Adptr</a>
+                <a href="/e-commerce/" className="navbar-brand align-items-center d-flex text-danger fs-4 fw-normal">Ahmad Adptr</a>
                 <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span className="navbar-toggler-icon"></span>
                 </button>
