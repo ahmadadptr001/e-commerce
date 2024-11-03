@@ -39,11 +39,12 @@ function App() {
   }
 
   return (
-    <Router basename="/e-commerce/">
+    <Router basename="/e-commerce">
       <Routes>
 
         <Route
           path="/"
+          basename="/e-commerce"
           element={
             <>
               
@@ -57,10 +58,10 @@ function App() {
             </>
           } />
 
-        <Route path="/shop" element={<MainShop />} />
-        <Route path="/a_year_in_indonesia" element={<A_Year_Main />}></Route>
-        <Route path="/about" element={<AboutMain />}></Route>
-        <Route path="/contact" element={<ContactMain />}></Route>
+        <Route basename="/e-commerce" path="/shop" element={<MainShop />} />
+        <Route basename="/e-commerce" path="/a_year_in_indonesia" element={<A_Year_Main />}></Route>
+        <Route basename="/e-commerce" path="/about" element={<AboutMain />}></Route>
+        <Route basename="/e-commerce"path="/contact" element={<ContactMain />}></Route>
 
 
         <Route
@@ -73,11 +74,11 @@ function App() {
             </>
           } />
 
-          <Route path="/shop-more/electronics" element={<Electronics />} />
-          <Route path="/shop-more/jewelery" element={<Jewelery />} />
-          <Route path="/shop-more/men's" element={<Mens />} />
-          <Route path="/shop-more/women's" element={<Womens />} />
-          <Route path="/shop-more/searching" element={<Searching />} />
+          <Route basename="/e-commerce" path="/shop-more/electronics" element={<Electronics />} />
+          <Route basename="/e-commerce" path="/shop-more/jewelery" element={<Jewelery />} />
+          <Route basename="/e-commerce" path="/shop-more/men's" element={<Mens />} />
+          <Route basename="/e-commerce" path="/shop-more/women's" element={<Womens />} />
+          <Route basename="/e-commerce" path="/shop-more/searching" element={<Searching />} />
             
       </Routes>
       <Footer />
