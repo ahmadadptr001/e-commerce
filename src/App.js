@@ -29,6 +29,9 @@ import Jewelery from "./components-shop/jewelery";
 import Mens from "./components-shop/men's clothing";
 import Womens from "./components-shop/women's clothing";
 import Searching from "./components-shop/searching";
+import Auth from "./components-shop/auth/auth";
+import Signin from "./components-shop/signin/signinPage";
+import Signup from "./components-shop/signup/signupPage";
 
 function App() {
   
@@ -79,7 +82,10 @@ function App() {
           <Route basename="/e-commerce" path="/shop-more/men's" element={<Mens />} />
           <Route basename="/e-commerce" path="/shop-more/women's" element={<Womens />} />
           <Route basename="/e-commerce" path="/shop-more/searching" element={<Searching />} />
-            
+          <Route basename="/e-commerce" path="/shop-more/auth" element={<Auth />} />
+          <Route basename="/e-commerce" path="/shop-more/signin" element={<Signin />} />
+          <Route basename="/e-commerce" path="/shop-more/signup" element={<Signup />} />
+
       </Routes>
       <Footer />
       </>

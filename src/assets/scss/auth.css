@@ -1,0 +1,42 @@
+.card-auth {
+  font-size: 90%;
+}
+.card-auth img {
+  width: 90%;
+}
+.card-auth .card-header {
+  font-family: "Playwrite GB S";
+}
+.card-auth .card-header .signin-house {
+  width: 9.5rem;
+}
+.card-auth .card-header .signup-pencil {
+  width: 8rem;
+}
+.card-auth p {
+  font-family: cursive;
+  text-align: center;
+  font-size: 0.6rem;
+}
+.card-auth a {
+  font-size: 0.9rem;
+  font-family: "Edu VIC WA NT Beginner";
+  font-weight: 550;
+}
+.card-auth .card-body img {
+  width: 5rem;
+}
+.card-auth .card-body .already-account, .card-auth .card-body .already-account a {
+  font-size: 0.55rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card-auth .card-body input, .card-auth .card-body label {
+  font-size: 80%;
+  font-family: cursive;
+}
+.card-auth .card-body input:focus {
+  box-shadow: none;
+}
+.card-auth .card-body .gender-option img {
+  width: 3rem;
+}/*# sourceMappingURL=auth.css.map */

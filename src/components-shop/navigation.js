@@ -68,7 +68,7 @@ export default function Navigation( { onSearchChange }) {
                                 </form>
                             </li>
                             <li className="nav-item">
-                                <a href="#">
+                                <a href="/e-commerce/#/shop-more/auth">
                                     <i className="bx bxs-user"></i>
                                 </a>
                             </li>
