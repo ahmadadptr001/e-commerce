@@ -39,7 +39,11 @@ function App() {
   }
 
   return (
+<<<<<<< HEAD
     <Router basename="/e-commerce">
+=======
+    <Router basename="/e-commerce/">
+>>>>>>> 7cccb2b65bacac382c9c165a5a42799d0edfb8b7
       <Routes>
 
         <Route
