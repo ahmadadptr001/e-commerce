@@ -4,7 +4,7 @@ import "boxicons/css/boxicons.min.css";
 
 import './App.css';
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <Router basename="/e-commerce">
+    <>
       <Routes>
         <Route
           path="/"
@@ -81,7 +81,7 @@ function App() {
             
       </Routes>
       <Footer />
-    </Router>
+      </>
   );
 }
 
