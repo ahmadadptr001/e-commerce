@@ -54,3 +54,42 @@
 
     }
 }
+
+.table-cart {
+    .pe-0 {
+        width: 60px;
+    }
+    .no-border {
+        border: none;
+    }
+
+    thead {
+        background-color: #343a40 !important;
+        color: white;
+    }
+}
+
+
+@media (min-width: 300px) {
+    .table-cart {
+        .ps-0 {
+            width: 80px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .table-cart {    
+        .ps-0 {
+            width: 100px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .table-cart {    
+        .ps-0 {
+            width: 120px;
+        }
+    }
+}

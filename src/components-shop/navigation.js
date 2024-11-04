@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function Navigation( { onSearchChange }) {
+export default function Navigation( { onSearchChange, badgeCount }) {
 
     const [searchInput, setSearchInput] = useState('');
 
@@ -73,8 +73,13 @@ export default function Navigation( { onSearchChange }) {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="#">
+                                <a href="/e-commerce/#/shop-more/cart" className="btn btn-primary py-0 px-3">
                                     <i className="bx bxs-cart"></i>
+                                    <span
+                                        className="badge bg-danger px-1 rounded-pill" 
+                                        style={{fontSize : ".5rem", fontWeight : "100", paddingTop : ".15rem", paddingBottom : ".15rem"}}>
+                                            { badgeCount }
+                                    </span>
                                 </a>
                             </li>
                         </ul>

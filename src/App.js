@@ -32,6 +32,7 @@ import Searching from "./components-shop/searching";
 import Auth from "./components-shop/auth/auth";
 import Signin from "./components-shop/signin/signinPage";
 import Signup from "./components-shop/signup/signupPage";
+import Cart from "./components-shop/shopping-cart/cart";
 
 function App() {
   
@@ -40,6 +41,14 @@ function App() {
   const handleInputChange = (term) => {
       setSearchTerm(term)
   }
+
+  const [badgeCount, setBadgeCount] = useState(0)
+
+  function handleBadgeCount() {
+    setBadgeCount(badgeCount + 1)
+  }
+
+  const [titleImageProduct, setTitleImageProduct] = useState([]);
 
   return (
     <>
@@ -71,9 +80,11 @@ function App() {
           basename="/e-commerce"
           element={
             <>
-              <Navigation onSearchChange={handleInputChange} />
+              <Navigation onSearchChange={handleInputChange} badgeCount={badgeCount}/>
               <HeroSection category={"all category"} />
-              <MainContent />
+              {/* <MainContent handleBadgeCount={handleBadgeCount} setTitleImageProduct={(newProduct) => setTitleImageProduct((prev) => [...prev, newProduct]) }/> */}
+              <MainContent handleBadgeCount={handleBadgeCount} setTitleImageProduct={setTitleImageProduct}/>
+            
             </>
           } />
 
@@ -85,6 +96,7 @@ function App() {
           <Route basename="/e-commerce" path="/shop-more/auth" element={<Auth />} />
           <Route basename="/e-commerce" path="/shop-more/signin" element={<Signin />} />
           <Route basename="/e-commerce" path="/shop-more/signup" element={<Signup />} />
+          <Route basename="/e-commerce" path="/shop-more/cart" element={<Cart titleImageProduct={titleImageProduct}/>} />
 
       </Routes>
       <Footer />

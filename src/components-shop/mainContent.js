@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function MainContent() {
+export default function MainContent( {handleBadgeCount, setTitleImageProduct }) {
     const url = "https://fakestoreapi.com/products";
     const [products, setProducts] = useState([]);
 
@@ -12,7 +12,26 @@ export default function MainContent() {
 
     useEffect( () => {
         getDataProducts();
-    })
+    }, [])
+
+
+    const gabunganHandle = ( data ) => {
+        handleBadgeCount()
+        // setTitleImageProduct( {title : data.title, image : data.image, price : data.price} )
+        setTitleImageProduct((prevProducts) => {
+            const existingProduct = prevProducts.find((item) => item.title === data.title);
+    
+            if (existingProduct) {
+                return prevProducts.map((item) =>
+                    item.title === data.title
+                        ? { ...item, totalProduct: item.totalProduct + 1 } // Menambahkan totalProduct
+                        : item
+                );
+            } else {
+                return [...prevProducts, { title: data.title, image: data.image, price: data.price, totalProduct: 1 }]; // Tambahkan produk baru
+            }
+        });
+    }
 
     return(
         <div className="container">
@@ -25,7 +44,8 @@ export default function MainContent() {
                                 title={product.title}
                                 description={product.description}
                                 category={product.category}
-                                price={product.price} />
+                                price={product.price}
+                                gabunganHandle={gabunganHandle}/>
                         </div>
                     )
                 })}
@@ -35,7 +55,7 @@ export default function MainContent() {
 }
 
 
-function BasicBodyCard(props) {
+function BasicBodyCard({ gabunganHandle, ...props}) {
     return (
         <div className="card text-center border-0 m-2">
             <div className="card-header bg-transparent">
@@ -47,7 +67,7 @@ function BasicBodyCard(props) {
                 <p className="card-text" style={{fontSize : ".6rem"}}>
                     { props.description }
                 </p>
-                <button className="btn btn-primary py-2 px-4"> ${props.price}</button>
+                <button className="btn btn-primary py-2 px-4" onClick={() => gabunganHandle({"title" : props.title, "image" : props.urlImage, "price" : props.price})}> ${props.price}</button>
             </div>
         </div>
     )
