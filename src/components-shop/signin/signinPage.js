@@ -22,11 +22,11 @@ export default function Signin() {
 
                             <form action="e-commerce/#/shop-more">
                                 <div className="form-floating mb-3">
-                                    <input type="text" name="username" id="username" className="form-control" placeholder="Username" />
+                                    <input type="text" name="username" id="username" className="form-control" placeholder="Username" required autoFocus/>
                                     <label htmlFor="username">Username</label>
                                 </div>
                                 <div className="form-floating mb-3">
-                                    <input type={typeInput ? "text" : "password"} name="password" id="password" className="form-control" placeholder="Password" />
+                                    <input type={typeInput ? "text" : "password"} name="password" id="password" className="form-control" placeholder="Password" required/>
                                     <label htmlFor="password">Password</label>
                                 </div>
 
@@ -37,7 +37,7 @@ export default function Signin() {
                                         id="showPassword"
                                         name="showPassword"
                                         // checked={typeInput}
-                                        onChange={handleType} />
+                                        onChange={handleType}/>
                                     <label htmlFor="showPassword" className="form-check-label">Show Password</label>
                                 </div>
                             </form>

@@ -18,7 +18,7 @@ export default function Navigation( { onSearchChange, badgeCount }) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="navbar-collapse collapse nav-shop">
+                <div className="navbar-collapse collapse nav-shop w-100 overflow-hidden">
                     <ul className="navbar-nav me-auto align-items-center gap-3">
                         <li className="nav-item dropdown mt-2 mt-lg-0 justify-content-center ms-4">
                             <button className="m-auto gap-2 d-flex align-items-center btn btn-secondary dropdown-toggle justify-content-center"
@@ -53,35 +53,40 @@ export default function Navigation( { onSearchChange, badgeCount }) {
                         </li>
                     </ul>
                     <div>
-                        <ul className="gap-2 d-flex align-items-center justify-content-center mt-4 mt-lg-0 p-0">
-                            <li className="nav-item">
-                                <form action="/e-commerce/#/shop-more/searching" className="d-flex align-items-center justify-content-center gap-2">
-                                    <input
-                                        type="search"
-                                        value={searchInput}
-                                        onChange={handleInputChange}
-                                        className="px-3 rounded-pill py-1 fw-semibold border text-secondary"
-                                        placeholder="Search product"/>
-                                    <button className="btn btn-success py-0 px-2">
-                                        <i className="bx bx-search m-0 p-0"></i>
-                                    </button>
-                                </form>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/e-commerce/#/shop-more/auth">
-                                    <i className="bx bxs-user"></i>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/e-commerce/#/shop-more/cart" className="btn btn-primary py-0 px-3">
-                                    <i className="bx bxs-cart"></i>
-                                    <span
-                                        className="badge bg-danger px-1 rounded-pill" 
-                                        style={{fontSize : ".5rem", fontWeight : "100", paddingTop : ".15rem", paddingBottom : ".15rem"}}>
-                                            { badgeCount }
-                                    </span>
-                                </a>
-                            </li>
+                        <ul className="gap-2 d-sm-flex align-items-center justify-content-center mt-4 mt-lg-0 p-0">
+                            <div>
+
+                                <li className="nav-item">
+                                    <form action="/e-commerce/#/shop-more/searching" className="d-flex align-items-center justify-content-center gap-2">
+                                        <input
+                                            type="search"
+                                            value={searchInput}
+                                            onChange={handleInputChange}
+                                            className="px-3 rounded-pill py-2 py-lg-1 fw-semibold border text-secondary w-100"
+                                            placeholder="Search product"/>
+                                        <button className="btn btn-success py-0 px-2">
+                                            <i className="bx bx-search m-0 p-0"></i>
+                                        </button>
+                                    </form>
+                                </li>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-center gap-2 mt-sm-0 mt-3">
+                                <li className="nav-item">
+                                    <a href="/e-commerce/#/shop-more/auth">
+                                        <i className="bx bxs-user"></i>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="/e-commerce/#/shop-more/cart" className="btn btn-primary py-0 px-2">
+                                        <i className="bx bxs-cart"></i>
+                                        <span
+                                            className="badge bg-danger px-1 rounded-pill" 
+                                            style={{fontSize : ".5rem", fontWeight : "100", paddingTop : ".15rem", paddingBottom : ".15rem"}}>
+                                                { badgeCount }
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
                         </ul>
                     </div>
                 </div>

@@ -17,27 +17,27 @@ export default function Signup() {
 
                             <form action="e-commerce/#/shop-more">
                                 <div className="form-floating mb-3">
-                                    <input type="text" name="username" id="username" className="form-control" placeholder="Create Username" />
+                                    <input type="text" name="username" id="username" className="form-control" placeholder="Create Username" required autoFocus/>
                                     <label htmlFor="username">Create Username</label>
                                 </div>
                                 <div className="form-floating mb-3">
-                                    <input type="password" name="password" id="password" className="form-control" placeholder="Create Password" />
+                                    <input type="password" name="password" id="password" className="form-control" placeholder="Create Password" required/>
                                     <label htmlFor="password">Create Password</label>
                                 </div>
 
                                 <div className="form-floating mb-3">
-                                    <input type="password" name="confirmPassword" id="confirmPassword" className="form-control" placeholder="Confirm Password" />
+                                    <input type="password" name="confirmPassword" id="confirmPassword" className="form-control" placeholder="Confirm Password" required/>
                                     <label htmlFor="confirmPassword">Confirm Password</label>
                                 </div>
 
                                 <div className="d-flex gap-4 align-items-center justify-content-center mb-3">
                                     <label class="gender-option" id="male-option">
-                                        <input type="radio" name="gender" value="male" />
+                                        <input type="radio" name="gender" value="male" required/>
                                         <img src={ maleGif } alt="Male Icon" />
                                     </label>
 
                                     <label class="gender-option" id="female-option">
-                                        <input type="radio" name="gender" value="female" />
+                                        <input type="radio" name="gender" value="female" required/>
                                         <img src={ femaleGif } alt="Female Icon" />
                                     </label>
                                 </div>
